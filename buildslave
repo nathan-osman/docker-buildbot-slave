@@ -1,0 +1,8 @@
+SLAVE_RUNNER=/usr/bin/buildslave
+
+SLAVE_ENABLED[1]=1
+SLAVE_NAME[1]="buildslave #1"
+SLAVE_USER[1]="buildbot"
+SLAVE_BASEDIR[1]="/var/lib/buildbot/slaves/slave"
+SLAVE_OPTIONS[1]=""
+SLAVE_PREFIXCMD[1]=""
