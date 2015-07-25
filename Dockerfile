@@ -1,10 +1,10 @@
 FROM ubuntu:14.04
 MAINTAINER Nathan Osman <nathan@quickmediasolutions.com>
 
-# Download and install the buildbot slave and build-essential packages
+# Download and install the buildbot slave, psutil, and build-essential packages
 RUN \
   apt-get update && \
-  apt-get install -y buildbot-slave build-essential && \
+  apt-get install -y buildbot-slave python-psutil build-essential && \
   rm -rf /var/lib/apt/lists/*
 
 # Copy the slave configuration and launching script
