@@ -11,8 +11,5 @@ RUN \
 COPY buildbot.tac /var/lib/buildbot/slaves/slave/
 COPY run.py /root/
 
-# Enable the slave
-COPY buildslave /etc/default/
-
 # Command to setup the environment and launch the builder
 CMD /root/run.py
